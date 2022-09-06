@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+<!---------------------------------------------------->
+<header>
+  <!--Use Flexbox to create the navigation bar-->
+  <div class="flexbox-container">
+    <div class="box-1">
+      <img src="MEDIA/global.png" alt="Logo"/>
+    </div>
+
+    <div class="box-2">
+      <p class="tagline">ITWD6.408</p>
+    </div>
+
+    <div class="box-3">
+      <div class="horizontal-nav">
+        <ul>
+          <li class="active"><a href="index.html">HOME</a></li>
+          <li><a href="forms.html">FORMS</a></li>
+          <li><a href="xml&rss.html">XML/RSS</a></li>
+          <li><a href="js-demo.html">JAVASCRIPT</a></li>
+          <li><a href="research.html">RESEARCH</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="box-4">
+      <p onclick="openNav()">≡</p>
+    </div>
+  </div>
+  <!--Curtain menu: collapse this menu as default when loading the page-->
+  <nav id="curtain-nav">
+    <!--Add a close button (X) hyperlink on the top left corner-->
+    <a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+    <div class="curtain-nav-content">
+      <ul>
+        <li class="active"><a href="index.html">HOME</a></li>
+        <li><a href="forms.html">FORMS</a></li>
+        <li><a href="xml&rss.html">XML/RSS</a></li>
+        <li><a href="js-demo.html">JAVASCRIPT</a></li>
+        <li><a href="research.html">RESEARCH</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!---------------------------------------------------->
+<!--Main content section-->
+<main>
+
+    <section class="showcase">
+      <div class="bg-image"></div>
+
+      <div class="bg-text">
+        <p>Advanced Internet & Web Page Development</p>
+        <h1>I am Aleria Fraser</h1>
+        <p>And I am a student at EIT</p>
+      </div>
+    </section>
+
+    <section class="bio">
+      <div class="bio-image">
+        <img src="MEDIA/avatar.png" alt="Avatar Image" style="width: 90px; height: 100px;">
+      </div>
+
+      <div class="bio-paragraph">
+        <h2>BIO</h2>
+        <p>My name is Aleria Fraser. I was born in South Africa and moved
+          to New Zealand with my parents when I was one. I am bilingual, I can
+          speak both English and Afrikaans. I'm interested in drones,
+          and I enjoy flying mine and taking photos and videos with it.
+          I am also trying to learn to roller skate. I'm taking this paper
+          because I have had an interest in website creation for a while. It
+          is actually the main reason why I am doing this BCS. By taking this
+          course, I hope to become more confident in my ability to create
+          websites. I created my first one last year, but it wasn't very
+          responsive. I hope to do better this time.
+        </p>
+        </div>
+    </section>
+
+
+
+    <section class="webtechno">
+      <h2>MY WEB TECHNOLOGIES</h2>
+        <p>1. Web Browsers: Safari and Chrome</p>
+        <p>2. Code Editor: Atom</p>
+        <p>3. Devices: MacBook and iPad</p>
+        <p>4. Web Hosting: GitHub?</p>
+        <p>5. Wireframe Creator: Balsamic Wireframes</p>
+    </section>
+
+
+
+    <section class="competences">
+      <h2>My Web Development Competence</h2>
+
+      <div class="topics-container">
+        <div class="flipbox-wrapper">
+          <div class="flip-box">
+              <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h2>HTML5 Mark-up</h2>
+                <img src="MEDIA/html5.png" alt="HTML5 Image"
+                style="width: 90px; height: 100px;">
+              </div>
+              <div class="flip-box-back">
+                <h2></h2>
+                <p>Out of 10 I would rate myself as a 5 with HTML. I understand
+                  the basics and don't find new things too hard because it is
+                  basically the bones of a website.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flipbox-wrapper">
+              <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <h2>CSS3 Styling</h2>
+                  <img src="MEDIA/css3.png" alt="CSS3 Image"
+                  style="width: 90px; height: 100px;">
+                </div>
+              <div class="flip-box-back">
+                <h2></h2>
+                <p>Out of 10 I'm probably at a 5. How it works makes sense to
+                me but I am not familiar with all of the different "words" that
+                are used to do different things.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="flipbox-wrapper">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <h2>JavaScript Interactivity</h2>
+                  <img src="MEDIA/javascript.png" alt="JavaScript Image"
+                  style="width: 90px; height: 100px;">
+                </div>
+                <div class="flip-box-back">
+                  <h2></h2>
+                  <p>Out of 10 I am definietly a 1. Last year was term based learning and everything was
+                    given to us so quickly. I was learning all of this from scratch and then we went
+                    into lockdown again. I unfortunetly didn't learn much about JavaScript at all and
+                    had none in my website.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="statement">
+      <h2>Statement of Authenticity</h2>
+      <p>I confirm that:</p>
+      <p>This is an original assessment and is entirely my own work. It contains no material
+        previously published or written by another person or myself except where due
+        acknowledgement is made in the text. No material which to a substantial extent, has been
+        submitted for any other academic course included without acknowledgement.</p>
+    </section>
+
+</main>
+
+<!---------------------------------------------------->
+<!--Footer section-->
+<footer>
+  <div> Created by: Aleria Fraser <br>
+    Contact me at: <a href="mailto:frasea7@student.eit.ac.nz">
+      frasea7@student.eit.ac.nz</a>
+  </div>
+</footer>
+
+<!--JavaScript file is embedded at the bottom of the html file-->
+<script type="text/javascript" src="JS/javascript.js"></script>
+
+</body>
+</html>
