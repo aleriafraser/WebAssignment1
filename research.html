@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JS-Demo</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+<!---------------------------------------------------->
+<header>
+	<!--Use Flexbox to create the navigation bar-->
+	<div class="flexbox-container">
+		<div class="box-1">
+			<img src="MEDIA/global.png" alt="Logo"/>
+		</div>
+
+		<div class="box-2">
+			<p class="tagline">ITWD6.408</p>
+		</div>
+
+		<div class="box-3">
+			<div class="horizontal-nav">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="forms.html">FORMS</a></li>
+					<li><a href="xml&rss.html">XML/RSS</a></li>
+					<li><a href="js-demo.html">JAVASCRIPT</a></li>
+					<li class="active"><a href="research.html">RESEARCH</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="box-4">
+			<p onclick="openNav()">≡</p>
+		</div>
+	</div>
+
+	<!--Curtain menu: collapse this menu as default when loading the page-->
+	<nav id="curtain-nav">
+		<!--Add a close button (X) hyperlink on the top left corner-->
+		<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+		<div class="curtain-nav-content">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="forms.html">FORMS</a></li>
+				<li><a href="xml&rss.html">XML/RSS</a></li>
+				<li><a href="js-demo.html">JAVASCRIPT</a></li>
+				<li class="active"><a href="research.html">RESEARCH</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<!---------------------------------------------------->
+<!--Main content section-->
+<div class="r-flipboxes-container">
+    <div class="r-flipbox-wrapper">
+        <div class="r-flex-item-left">
+            <div class="r-flip-box">
+                    <div class="r-flip-box-inner">
+                        <div class="r-flip-box-front">
+                            <h2>Copyright, Creative Common (CC) Licenses, Fair Use:</h2>
+                            <img src="MEDIA/copyright.jpg" alt="Copyright Image" style="width: 500px; height: 300px;">
+                        </div>
+                        <div class="r-flip-box-back">
+                            <h4>Copyright principles:</h4>
+                            <p>Copyright automatically applies when something is published. 
+                                In NZ, creators do not have to register it like a trademark 
+                                or patent.
+                                <br>
+                                The © symbol is only a reminder. Copyright still applies even if the 
+                                © is not displayed.
+                                <br>
+                                Copyright protects everything that is published which includes: ✶Print material 
+                                ✶Computer programs ✶Dramatic performances ✶Music ✶Art ✶Page layouts ✶Photos
+                                <br>
+                                Copyright lasts more than a lifetime. Copyright in NZ on literary, 
+                                dramatic, artistic and musical works stays in place for the creators 
+                                lifetime and up to 50 years after their death.
+                                <br>
+                                <a href="https://www.copyright.co.nz/understanding-copyright/what-is-copyright ">Copyright Reference</a>
+                            </p>
+                            <h4>Creative Commons (CC) licences:</h4>
+                            <p>Creative Commons licences were created for copyright owners 
+                                that wanted to share their work without receiving payment and/or 
+                                royalties. Creative Commons licences use icons and acronyms to 
+                                show how the owner of the work wants to be acknowledged and the 
+                                limitations of how the work is allowed to be used.
+                                <br>
+                                <a href="https://www.iponz.govt.nz/about-ip/copyright/licensing-copyright/">CC Reference</a>
+                            </p>
+                            <h4>Fair Use:</h4>
+                            <p>Fair use does not apply in New Zealand. It is an American 
+                                term with an American application. Often used in legal 
+                                defence by people accused of breaching someone else's 
+                                copyright. New Zealand uses “Fair Dealing” which is 
+                                defined as a set of privileges that someone can legally 
+                                exercise, without the permission of the copyright owner. 
+                                Fair dealing allows someone to use copyrighted material, 
+                                without permission for the purpose of research, private 
+                                study, criticism, review and news reporting.
+                                <br>
+                                <a href="https://www.copyright.co.nz/about/news-and-event/whats-fair-use-and-does-it-apply-in-nz">Fair Use Reference</a>
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="r-flex-item-right">
+        <div class="r-flipbox-wrapper">
+            <div class="r-flip-box">
+                <div class="r-flip-box-inner">
+                    <div class="r-flip-box-front">
+                        <h2>Privacy & Privacy Policy:</h2>
+                        <img src="MEDIA/privacy.jpg" alt="Privacy Image" style="width: 500px; height: 300px;">
+                    </div>
+                    <div class="r-flip-box-back">
+                        <h2>Privacy Policy:</h2>
+                        <p>A privacy policy/statement tells people how their information will 
+                            be collected, used and disclosed. The NZ Privacy Act 2020 requires 
+                            New Zealand organisations to be transparent about when, why and 
+                            how they collect personal information. 
+                        <br>
+                        <a href="https://www.digital.govt.nz/standards-and-guidance/design-and-ux/usability/privacy-statements-for-websites/">Privacy Reference</a>
+                        </p>
+                        <h2>My Privacy Policy for My Website:</h2>
+                        <p>Personal information can and will only be provided to third parties 
+                            if it is necessary to do so to complete a transaction or if we are 
+                            required to do so by law. No personal information is supplied to 
+                            marketing and/or research companies or agencies. Under the Privacy 
+                            Act 2020, you have the right to ask to see the information we hold 
+                            about you. If any of it is incorrect then we will amend or remove 
+                            it at your request.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="r-flex-item-left">
+        <div class="r-flipbox-wrapper">
+            <div class="r-flip-box">
+                <div class="r-flip-box-inner">
+                    <div class="r-flip-box-front">
+                        <h2>Search Engine Optimisation (SEO):</h2>
+                        <img src="MEDIA/seo.jpg" alt="Search Engine Optimisation Image" style="width: 500px; height: 300px;">
+                    </div>
+                    <div class="r-flip-box-back">
+                        <h2>Improving The Visibility of a Webpage:</h2>
+                        <p>Optimising HTML: <br> Constantly checking that your website's 
+                            code is working well and nothing in the code is making it lag.</p>
+                        <p>Sharing your website on social media: <br> Link sharing drives 
+                            more traffic to your website.</p>
+                        <p>User-Friendly Interface: <br> Make it accessible and easy 
+                            to understand. Links, buttons etc should all be working. 
+                            No one wants to use a website that frustrates them.</p>
+                        <p>Keyword Targeting: <br> Commonly searched for phrases or 
+                            keywords are crucial in search engine optimisation. The more 
+                            keywords you use the more people will use your website.</p>
+                        <p>Humans First Approach: <br> Write your website for humans first 
+                            and search engines second, so it can be more easily understood.</p>
+                        <p>Remove Anything Unnecessary: <br> Anything that slows down the website has got to go. 
+                            That includes useless comments and code that doesn't do 
+                            anything. Only have code that is useful.</p>
+                        <a href="https://miliamarketing.com/understanding-the-4-types-of-seo-and-how-best-to-implement-each-one/">SEO Reference</a>
+                        <br>
+                        <a href="https://www.wordstream.com/blog/ws/2021/03/05/seo-strategy">Second SEO Reference</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="r-flex-item-right">
+        <div class="r-flipbox-wrapper">
+            <div class="r-flip-box">
+                <div class="r-flip-box-inner">
+                    <div class="r-flip-box-front">
+                        <h2>Web Publishing:</h2>
+                        <img src="MEDIA/web-hosting.jpg" alt="Web Pubilishing/Hosting Image" style="width: 500px; height: 300px;">
+                    </div>
+                    <div class="r-flip-box-back">
+                        <h2>Three major factors in choosing a web host:</h2>
+                        <br>
+                        <br>
+                        <p>Must be safe and have good security. No one wants their information 
+                            being hacked and stolen.
+                        <br>
+                        <br>
+                            Must be fast and reliable. No one will use the website if it takes 
+                            too long to load or doesn't load at all.
+                        <br>
+                        <br>
+                            Must have a high up time, so it will have reliable transfers and 
+                            quick repairs in case something goes wrong with a file or there is 
+                            a hardware malfunction.</p>
+                        <br>
+                        <a href="https://reachdesign.nz/blog-hosting">Web Hosting Reference</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="r-flex-item-left">
+        <div class="r-flipbox-wrapper">
+            <div class="r-flip-box">
+                <div class="r-flip-box-inner">
+                    <div class="r-flip-box-front">
+                        <h2>Web Performance & Maintenance:</h2>
+                        <img src="MEDIA/web-performance.jpg" alt="Web Performance Image" style="width: 500px; height: 300px;">
+                    </div>
+                    <div class="r-flip-box-back">
+                        <h2>Ways to reduce page loading time:</h2>
+                        <p>Reduce number of HTTP requests</p>
+                        <p>Reduce amount of CSS and JavaScript</p>
+                        <p>Streamline HTML code</p>
+                        <p>Optimise images</p>
+                        <p>Clean up the media library</p>
+                        <p>Clean up the database</p>
+                        <a href="https://terakeet.com/blog/page-load-time/">Reduce Loading Time Reference</a>
+                        <br>
+                        <br>
+                        <br>
+                        <h2>Important tasks to do when maintaining a website:</h2>
+                        <p>Create regular backups</p>
+                        <p>Test loading speed</p>
+                        <p>Fix dead links and errors</p>
+                        <p>Test browser compatibility</p>
+                        <p>Publish new content</p>
+                        <a href="https://www.gmrwebteam.com/blog/8-regular-website-maintenance-tasks-for-peak-performance">Maintaining Resource</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="r-flex-item-right">
+        <div class="r-flipbox-wrapper">
+            <div class="r-flip-box">
+                <div class="r-flip-box-inner">
+                    <div class="r-flip-box-front">
+                        <h2>5 Most Common Cyber Attacks & How To Prevent Them:</h2>
+                        <img src="MEDIA/web-security.jpg" alt="Web Security Image" style="width: 500px; height: 300px;">
+                    </div>
+                    <div class="r-flip-box-back">
+                        <h3>Password based attack:</h3>
+                        <p>Hackers do many things to get through someone's password like guessing 
+                            and using password cracking software. 
+                            The best way to prevent this is to create long passwords and unique 
+                            passwords. The same password should also not be used twice.</p>
+                        <h3>Denial of service attacks:</h3>
+                        <p>Hackers and scammers send an overload of data to 
+                            a website making it unusable. 
+                            The best way to prevent this from happening is to constantly 
+                            monitor traffic. Traffic monitoring tools can be 
+                            used.</p>
+                        <h3>Social engineering attacks:</h3>
+                        <p>Phishing is how many people are tricked into clicking a 
+                            suspicious link. 
+                            The best way to prevent this is to educate employees, be cautious, use 
+                            phishing detection tools and use two factor authentication.</p>
+                        <h3>Man-in-the-middle Attacks:</h3>
+                        <p>A hacker inserts themself into a situation to eavesdrop or 
+                            pretends to be someone involved to steal 
+                            sensitive information. 
+                            To prevent this it's important to pay attention to security 
+                            certificate warnings, use HTTPs enabled websites and use 
+                            secured networks.</p>
+                        <h3>Malware attacks</h3>
+                        <p>Malicious software: viruses, worms, ransomware, spyware etc
+                            Can cause the loss of important and sensitive information and money too.
+                            To prevent this from happening you should browse cautiously and not 
+                            download untrusted files or email attachments.</p>
+                        <a href="https://www.certifid.com/article/5-types-of-cyber-attacks-and-how-to-prevent-them">Web Security Reference</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!---------------------------------------------------->
+<!--Footer section-->
+<footer>
+	<div class="footer"> Created by: Aleria Fraser <br>
+	  Contact me at: <a href="mailto:frasea7@student.eit.ac.nz">
+		frasea7@student.eit.ac.nz</a>
+	</div>
+</footer>
+
+<script type="text/javascript" src="JS/javascript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>
